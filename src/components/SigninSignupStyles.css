@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input{
+    @apply flex items-center m-auto w-4/5 h-16 bg-gray-200 rounded text-[16px] text-gray-900 mb-6
+  }
+  .input img {
+    @apply my-0 mx-4 
+  }
+  .input input {
+    @apply bg-transparent outline-none border-none 
+  }
+  .general-text {
+    @apply flex pb-4 items-center text-gray-700 text-base
+  }
+  .general-text span {
+    @apply ml-1 text-cyan-600 cursor-pointer 
+  }
+  .submit-container {
+    @apply flex w-auto gap-8 mx-6 mb-6 items-center justify-center
+  }
+  .submit-btn {
+    @apply flex w-auto h-auto p-5 text-white rounded text-[15px] cursor-pointer bg-gradient-to-r from-emerald-600 to-cyan-800
+  }
+  .error {
+    @apply flex flex-col p-2 ml-4 font-poppins text-[14px] text-black mb-4 bg-red-200 whitespace-pre-wrap rounded-lg border-[1px] border-red-400
+  }
+}
