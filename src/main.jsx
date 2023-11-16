@@ -9,10 +9,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
-      <Routes>
-        <Route path="/foundation-website-react" element={<App/>}/>
-      <Route path="/foundation-website-react/signinsignup" element = {<SigninSignup />} />
-    </Routes>
     </BrowserRouter>
   </React.StrictMode>,
 )

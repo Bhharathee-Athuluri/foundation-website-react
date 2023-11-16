@@ -1,56 +1,15 @@
-import React from 'react';
-import styles from './style';
-import { Navbar, Home, About, Certificates, Recognition, Donate, Footer, SigninSignup } from './components';
+import React from 'react'
 import './App.css'
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom'
+import { SigninSignup } from './components'
+import CompletePage from './components/CompletePage'
 
 function App() {
   return (
-    <>
-      <div className='bg-primary w-full overflow-hidden'>
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`{styles.boxWidth}`}>
-          <Navbar/>
-        </div>
-      </div>
-
-      <div className={`bg-primary ${styles.flexStart}`}>
-        <div className='`${styles.boxWidth}`'>
-          <Home />
-        </div>
-      </div>
-
-      <div className={`bg-primary ${styles.padingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <About />
-        </div>
-      </div>
-
-      <div className={`bg-primary ${styles.padingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Certificates />
-        </div>
-      </div>
-
-      <div className={`bg-primary ${styles.padingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Recognition />
-        </div>
-      </div>
-
-      <div className={`bg-primary ${styles.padingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Donate />
-        </div>
-      </div>
-
-      <div className={`bg-white ${styles.padingX} ${styles.flexStart}`}>
-        <div className="mx-2 my-2 flex justify-between">
-          <Footer />
-        </div>
-      </div>
-    </div>
-    </>
+    <Routes>
+        <Route path="/foundation-website-react" element={<CompletePage />}/>
+        <Route path="/foundation-website-react/signinsignup" element = {<SigninSignup />} />
+    </Routes>
   )
 }
 
