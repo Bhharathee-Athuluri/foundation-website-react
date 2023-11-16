@@ -43,11 +43,8 @@ const SigninSignup = (props) => {
         setPwdError(false);
         if(cpd === pwd){
           setcpderr(false);
-          navigate('/foundation-website-react', {
-            state: {
-              logIn: true
-            }
-          });
+          setLog(true);
+          navigate('/foundation-website-react');
         }
         else{
           setcpderr(true);
