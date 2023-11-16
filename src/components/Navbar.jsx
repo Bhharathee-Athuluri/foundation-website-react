@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from 'react'
+import React, { useContext } from 'react'
 import { useState } from 'react'
 import { logo, close, menu } from '../assets'
 import { navLinks } from '../constants'
