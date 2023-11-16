@@ -13,7 +13,7 @@ export const navLinks = [
   },
   {
     id: "recognition",
-    title: "NewsPaper Recognition",
+    title: "Our Recognition",
   },
   {
     id: "donate",

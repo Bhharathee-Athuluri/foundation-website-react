@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { createContext, useContext } from 'react'
 import { useState } from 'react'
 import { logo, close, menu } from '../assets'
 import { navLinks } from '../constants'
 import { useNavigate } from 'react-router-dom'
+import { logContext } from '../App'
 
 const Navbar = () => {
+  const { log, setLog } = useContext(logContext);
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
+
+  const handleLogout = () => {
+    setLog(false);
+  }
 
   const navigateToSISU = () => {
     navigate('/foundation-website-react/signinsignup');
@@ -14,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-screen flex justify-between items-center px-6 py-2 gap-8 navbar">
-      <img src={logo} alt="Foundation Logo" className="w-[80px] h-[110px]" />
+      <img src={logo} alt="Foundation Logo" className="w-[80px] h-[90px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
@@ -25,7 +31,9 @@ const Navbar = () => {
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
-        <li><button className='font-poppins font-normal cursor-pointer text-[16px] p-3 mr-6 rounded bg-white' onClick={navigateToSISU}>Sign In/Sign Up</button></li>
+        <li>
+        {log===false? <button className='font-poppins font-normal cursor-pointer text-[16px] p-3 mr-6 rounded bg-white' onClick={navigateToSISU}>Sign In/Sign Up</button> : <button className='font-poppins font-normal cursor-pointer text-[16px] p-3 mr-6 rounded bg-white' onClick = {()=>handleLogout()}>Logout</button> }
+        </li>
       </ul>
 
       <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -38,12 +46,14 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
               key={nav.id}
-              className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'} text-white`}
+              className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white`}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
-            <li><button className='font-poppins font-normal cursor-pointer text-[16px] p-3 rounded mt-4 bg-white' onClick={navigateToSISU}>Sign In/Sign Up</button></li>
+            <li>
+            {log===false? <button className='font-poppins font-normal cursor-pointer text-[16px] p-3 rounded bg-white' onClick={navigateToSISU}>Sign In/Sign Up</button> : <button className='font-poppins font-normal cursor-pointer p-3 text-[16px] rounded bg-white' onClick={()=>handleLogout()}>Logout</button> }
+            </li>
           </ul>
         </div>
       </div>

@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { email, password, person } from '../assets'
+import { logo } from '../assets'
 import './SigninSignupStyles.css'
 import { useNavigate } from 'react-router-dom'
+import { logContext } from '../App'
 
-const SigninSignup = () => {
+const SigninSignup = (props) => {
+  const { setLog } = useContext(logContext);
   const [action,setAction] = useState("Sign Up");
   const [pwd, setPwd] = useState('');
   const [pwdError, setPwdError] = useState(false);
@@ -25,7 +28,8 @@ const SigninSignup = () => {
 
     if(action === "Sign In") {
       if(mailError===false && pwd!==''){
-      navigate('/foundation-website-react');
+        setLog(true);
+        navigate('/foundation-website-react');
       }
     }
     else if(action === "Sign Up") {
@@ -39,7 +43,11 @@ const SigninSignup = () => {
         setPwdError(false);
         if(cpd === pwd){
           setcpderr(false);
-          navigate('/foundation-website-react');
+          navigate('/foundation-website-react', {
+            state: {
+              logIn: true
+            }
+          });
         }
         else{
           setcpderr(true);
@@ -50,7 +58,11 @@ const SigninSignup = () => {
   }
 
   return (
-    <div className="w-full overflow-hidden flex p-8 bg-gradient-to-r from-slate-600 to-gray-900 font-poppins">
+    <div className="w-full overflow-hidden flex flex-col p-8 bg-gradient-to-r from-slate-600 to-gray-900 font-poppins">
+      <div className="flex flex-row m-auto items-center py-2">
+        <img src={logo} alt="Foundation Logo" className="w-[110px] h-[120px]" />
+        <h1 className='text-gradient ml-[20px] sm:text-[32px] ss:text-[24px] font-bold'>Nayepankh Foundation</h1>
+      </div>
       <div id='signinsignup' className='flex flex-col m-auto my-12 bg-zinc-100 py-4 rounded-lg px-6'>
         <div className="flex flex-col items-center gap-2">
           <div className="text-gradient-signin text-[32px] font-semibold pt-2 pb-1">{action}</div>
