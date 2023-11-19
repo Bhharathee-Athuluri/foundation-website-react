@@ -6,6 +6,7 @@ import Donate from "./Donate";
 import Recognition from "./Recognition";
 import Footer from "./Footer";
 import SigninSignup from "./SigninSignup";
+import Feedback from "./Feedback";
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   Donate,
   Footer,
   SigninSignup,
+  Feedback,
 };

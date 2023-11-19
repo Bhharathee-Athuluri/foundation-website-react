@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.modal-btn {
+    @apply border border-gray-400 font-poppins fixed bottom-4 right-4 font-semibold border-2 p-2 rounded-lg bg-gradient-to-r from-yellow-200 to-blue-400
+}
+.modal-window {
+    @apply flex flex-col w-fit h-[400px] overflow-auto items-center font-poppins p-4 bg-gradient-to-l from-emerald-500 to-green-300 rounded-lg m-2 ss:mx-24
+}
+.explanation {
+    @apply flex w-auto h-auto font-poppins p-2 border rounded-lg bg-gradient-to-r from-gray-200 to-slate-300
+}
+.close-btn {
+    @apply self-end block px-3 py-1 rounded-full border-2 border-gray-400 bg-gray-200 text-[20px]
+}
+.content form {
+    @apply flex flex-col my-2 mx-4 items-center w-fit
+}
+.content input {
+    @apply border border-gray-400 p-2 m-2 bg-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent
+}
+.content textarea {
+    @apply w-full border border-gray-400 w-fit w-[240px] p-2.5 my-2 bg-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent resize-none
+}
+.submit {
+    @apply border border-2 mx-20 border-transparent p-3 mt-2 bg-white rounded-lg bg-purple-600 hover:bg-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 text-white
+}

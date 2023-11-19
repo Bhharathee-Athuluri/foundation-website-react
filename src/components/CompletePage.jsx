@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../style'
-import { Navbar, Home, About, Certificates, Recognition, Donate, Footer } from '../components'
+import { Navbar, Home, About, Certificates, Recognition, Donate, Footer, Feedback } from '../components'
 
 const CompletePage = () => {
   return (
@@ -45,6 +45,11 @@ const CompletePage = () => {
       <div className={`bg-white ${styles.padingX} ${styles.flexStart}`}>
         <div className="mx-2 my-2 flex justify-between">
           <Footer />
+        </div>
+      </div>
+      <div className={`bg-white ${styles.padingX} ${styles.flexStart}`}>
+        <div className="mx-2 my-2 flex justify-between">
+          <Feedback />
         </div>
       </div>
     </div>
