@@ -8,7 +8,7 @@ Validations done in the Sign Up/Sign In pages are as follows:
 - Password entered is checked in Sign Up to check if it is strong password.
 - Values of Password field and Confirm Password fields are compared to check if both are same in the Sign Up Page.
 
-A feedback mechanism and a community are added to the repository to enhance user interaction. The feedback mechanism is implemented using a Modal. The Community page contains various sections such as Mission and Values, Testimonials, Success Stories, etc.
+A feedback mechanism and a Community page are added to the repository to enhance user interaction. The feedback mechanism is implemented using a Modal. The Community page contains various sections such as Mission and Values, Testimonials, Success Stories, etc.
 
 This repository consists of two branches which are constantly updated:
 
