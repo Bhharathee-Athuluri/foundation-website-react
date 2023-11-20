@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import styles from '../style';
 import Popup from 'reactjs-popup';
 import './FeedbackStyles.css'
 

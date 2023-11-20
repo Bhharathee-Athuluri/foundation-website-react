@@ -7,6 +7,7 @@ import Recognition from "./Recognition";
 import Footer from "./Footer";
 import SigninSignup from "./SigninSignup";
 import Feedback from "./Feedback";
+import Community from "./Community";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Footer,
   SigninSignup,
   Feedback,
+  Community,
 };

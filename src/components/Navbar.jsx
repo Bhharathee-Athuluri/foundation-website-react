@@ -12,10 +12,14 @@ const Navbar = () => {
 
   const handleLogout = () => {
     setLog(false);
-  }
+  };
 
   const navigateToSISU = () => {
     navigate('/foundation-website-react/signinsignup');
+  };
+
+  const navigateToComm = () => {
+    navigate('/foundation-website-react/community');
   };
 
   return (
@@ -31,8 +35,11 @@ const Navbar = () => {
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
+        <li className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 text-white`}>
+              <p onClick={()=>navigateToComm()}>Community</p>
+        </li>
         <li>
-        {log===false? <button className='font-poppins font-normal cursor-pointer text-[16px] p-3 mr-6 rounded bg-white' onClick={navigateToSISU}>Sign In/Sign Up</button> : <button className='font-poppins font-normal cursor-pointer text-[16px] p-3 mr-6 rounded bg-white' onClick = {()=>handleLogout()}>Logout</button> }
+        {log===false? <button className='font-poppins font-normal cursor-pointer text-[16px] p-3 mr-6 rounded bg-white' onClick={()=>navigateToSISU()}>Sign In/Sign Up</button> : <button className='font-poppins font-normal cursor-pointer text-[16px] p-3 mr-6 rounded bg-white self-center' onClick = {()=>handleLogout()}>Logout</button> }
         </li>
       </ul>
 
@@ -51,8 +58,11 @@ const Navbar = () => {
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
+            <li className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white`}>
+              <p onClick={()=>navigateToComm()}>Community</p>
+            </li>
             <li>
-            {log===false? <button className='font-poppins font-normal cursor-pointer text-[16px] p-3 rounded bg-white' onClick={navigateToSISU}>Sign In/Sign Up</button> : <button className='font-poppins font-normal cursor-pointer p-3 text-[16px] rounded bg-white' onClick={()=>handleLogout()}>Logout</button> }
+            {log===false? <button className='font-poppins font-normal cursor-pointer text-[16px] p-3 rounded bg-white mb-4' onClick={navigateToSISU}>Sign In/Sign Up</button> : <button className='font-poppins font-normal cursor-pointer p-3 text-[16px] rounded bg-white' onClick={()=>handleLogout()}>Logout</button> }
             </li>
           </ul>
         </div>

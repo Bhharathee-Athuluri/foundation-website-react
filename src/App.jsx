@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import { SigninSignup } from './components'
+import { SigninSignup,Community } from './components'
 import CompletePage from './components/CompletePage'
 
 export const logContext = createContext();
@@ -20,6 +20,7 @@ function App() {
     <Routes>
         <Route path="/foundation-website-react" element={<CompletePage />}/>
         <Route path="/foundation-website-react/signinsignup" element = {<SigninSignup />} />
+        <Route path="/foundation-website-react/community" element = {<Community />} />
     </Routes>
     </LogContextProvider>
   )
