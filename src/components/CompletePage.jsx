@@ -7,51 +7,45 @@ const CompletePage = () => {
     <div>
         <div className='bg-primary w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`{styles.boxWidth}`}>
+      <div className={`${styles.boxWidth}`}>
           <Navbar/>
-        </div>
+          </div>
       </div>
 
-      <div className={`bg-primary ${styles.flexStart}`}>
-        <div className='`${styles.boxWidth}`'>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
           <Home />
-        </div>
+          </div>
       </div>
 
-      <div className={`bg-primary ${styles.padingX} ${styles.flexStart}`}>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <About />
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.padingX} ${styles.flexStart}`}>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Certificates />
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.padingX} ${styles.flexStart}`}>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Recognition />
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.padingX} ${styles.flexStart}`}>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Donate />
         </div>
       </div>
 
-      <div className={`bg-white ${styles.padingX} ${styles.flexStart}`}>
-        <div className="mx-2 my-2 flex justify-between">
+      <div className={`bg-white ${styles.paddingX} ${styles.flexStart}`}>
           <Footer />
-        </div>
       </div>
-      <div className={`bg-white ${styles.padingX} ${styles.flexStart}`}>
-        <div className="mx-2 my-2 flex justify-between">
           <Feedback />
-        </div>
-      </div>
     </div>
     </div>
   )

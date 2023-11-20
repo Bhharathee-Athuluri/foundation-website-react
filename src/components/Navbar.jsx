@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-screen flex justify-between items-center px-6 py-2 gap-8 navbar">
+    <nav className="w-full flex justify-between items-center px-4 py-2 gap-6 navbar">
       <img src={logo} alt="Foundation Logo" className="w-[80px] h-[90px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
