@@ -16,6 +16,11 @@ import email from "./email.png";
 import password from "./password.png";
 import person from "./person.png";
 import profile_icon from "./profile_icon.png";
+import insta_logo from "./insta_logo.png";
+import linkedin_logo from "./linkedin_logo.png";
+import fb_logo from "./fb_logo.jpg";
+import x_logo from "./x_logo.png";
+import youtube_logo from "./youtube_logo.png";
 
 export {
   arrowUp,
@@ -36,4 +41,9 @@ export {
   photo8,
   photo9,
   photo10,
+  insta_logo,
+  fb_logo,
+  youtube_logo,
+  x_logo,
+  linkedin_logo,
 };
