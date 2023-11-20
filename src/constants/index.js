@@ -25,7 +25,7 @@ export const navLinks = [
   },
   {
     id: "recognition",
-    title: "Our Recognition",
+    title: "Our Work",
   },
   {
     id: "donate",
