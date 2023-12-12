@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 .modal-btn {
-    @apply border border-gray-400 cursor-pointer font-poppins fixed bottom-4 right-4 font-semibold border-2 p-2 rounded-lg bg-gradient-to-tl from-teal-200 to-slate-100 hover:ring-2 focus:ring-teal-200 focus:outline-none focus:border-none z-10
+    @apply border border-gray-400 cursor-pointer font-poppins fixed bottom-3 right-4 font-semibold border-2 p-2 rounded-lg bg-gradient-to-tl from-teal-200 to-slate-100 hover:ring-2 focus:ring-teal-200 focus:outline-none focus:border-none z-10
 }
 .modal-window {
     @apply flex flex-col w-fit h-[400px] overflow-auto items-center font-poppins p-4 bg-gradient-to-l from-slate-400 via-gray-200 to-slate-300 rounded-lg m-2 ss:mx-24

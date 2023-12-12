@@ -21,6 +21,7 @@ import linkedin_logo from "./linkedin_logo.png";
 import fb_logo from "./fb_logo.jpg";
 import x_logo from "./x_logo.png";
 import youtube_logo from "./youtube_logo.png";
+import boticon from "./boticon.jpg";
 
 export {
   arrowUp,
@@ -46,4 +47,5 @@ export {
   youtube_logo,
   x_logo,
   linkedin_logo,
+  boticon,
 };

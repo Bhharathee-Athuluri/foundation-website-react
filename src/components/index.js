@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import SigninSignup from "./SigninSignup";
 import Feedback from "./Feedback";
 import Community from "./Community";
+import Chatbot from "./Chatbot/Chatbot";
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   SigninSignup,
   Feedback,
   Community,
+  Chatbot,
 };

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../style'
-import { Navbar, Home, About, Certificates, Recognition, Donate, Footer, Feedback } from '../components'
+import { Navbar, Home, About, Certificates, Recognition, Donate, Footer, Feedback, Chatbot } from '../components'
 
 const CompletePage = () => {
   return (
@@ -44,6 +44,9 @@ const CompletePage = () => {
 
       <div className={`bg-white ${styles.paddingX} ${styles.flexStart}`}>
           <Footer />
+      </div>
+      <div>
+        <Chatbot />
       </div>
           <Feedback />
     </div>
