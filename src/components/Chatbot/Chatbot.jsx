@@ -27,7 +27,7 @@ const Chatbot = () => {
       stylesheet: "https://webchat-styler-css.botpress.app/prod/db163b47-e6e5-4386-9117-51f9b41eb5cf/v52932/style.css",
       frontendVersion: "v1",
       showBotInfoPage: true,
-      showPoweredBy: true,
+      showPoweredBy: false,
       theme: "prism",
       themeColor: "#2563eb"
       })
